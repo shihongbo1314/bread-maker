@@ -1,0 +1,42 @@
+*{margin:0;padding:0}
+body{background:linear-gradient(to top,#FF6B89 ,#FE6986)}
+.wrapper{position:relative;width:370px;height:238px;margin:240px auto;}
+.shadow{position:absolute;bottom:0;left:-30px;width:430px;height:20px;background: #FD5274;border-radius: 10px;}
+/* 面包机 - 面包 */
+.bread-heart{width:132px;height:110px;position: absolute;background: url(../images/love.png) no-repeat;position: absolute;top:55px;left:79px;animation: bread-heart 8s infinite}
+.bread-ball{width:132px;height:110px;position: absolute;background: url(../images/ball.png) no-repeat;position: absolute;top:55px;left:177px;animation: bread-ball 8s infinite}
+.toaster{position: relative;z-index:99;animation: shaking 8s infinite}
+.toaster-body{position:relative;width:344px;height:175px;margin:0 auto;}
+.toaster-body-main{position: absolute;top:0;left:0;bottom:0;right:0;background:#F62B41;border-radius: 61px 61px 0 0;box-shadow: 77px 0px 0 0px inset #C20049;animation:body-color 8s infinite,body 8s infinite;transform-origin: bottom center}
+/*  面包机 - 进度开关 */
+.toaster-switch{width:57px;height:107px;position: absolute;top:40px;left:8px;animation: switch 8s infinite}
+.toaster-switch-hole{width:16px;height:107px;background:#2B3335;border-radius:10px;box-shadow:9px 3px 0 0 inset #9C0749;position: absolute;top:0;left:17px;}
+.toaster-switch-handler{width:40px;height:20px;background:#F0C4DF;box-shadow:-6px 0 0 0px #CC98B8 inset;border-radius:4px;position: absolute;top:85px;left:6px;animation: handler 8s infinite}
+
+/* 面包机 - 脸部 */
+.toaster-face{position: absolute;width:221px;height:137px;top:25px;right:20px;}
+
+.toaster-face-tense{position: absolute;width:100%;height:100%;animation: face-tense 8s infinite}
+.tense-eye{width:221px;height:90px;background: url(../images/eyes.png) no-repeat;animation: eyes-tense 8s infinite}
+.tense-mouth{width:60px;height:30px;background: url(../images/mouth_t.png) no-repeat;margin:auto;}
+
+.toaster-face-happy{position: absolute;width:100%;height:100%;animation: face-happy 8s infinite}
+.happy-eye{width:32px;height:67px;background:#fff;border-radius:20px;position: absolute;box-shadow: 3px -2px 0 0px #DFAFBF inset, -7px 4px 1px -3px #C4303E;animation: eyes-happy 8s infinite}
+.happy-eye::after{content:'';width:17px;height:45px;background: #2B3335;display: block;border-radius: 10px;margin:11px 0 0 9px;animation: pupil 8s infinite;transform-origin: left center}
+.happy-eye-left{left:40px;}
+.happy-eye-right{right:40px;}
+.happy-mouth{width:100px;height:50px;background: url(../images/mouth_h.png) no-repeat;position: absolute;bottom:0;left:0;right:0;margin:auto}
+
+
+.toaster-face-blush{position: absolute;top:90px;left:0;right:0;height:30px;}
+.toaster-face-blush::before,.toaster-face-blush::after{content:'';width:37px;height:17px;background:#C50B22;border-radius:100%;position: absolute;top:7px;animation:blush 8s infinite}
+.toaster-face-blush::before{left:8px;}
+.toaster-face-blush::after{right:8px;}
+
+/*  面包机 - 底部 */
+.toaster-line{position:relative;width:100%;height:30px;background: #fff;border-radius: 15px;}
+.toaster-line::after{content: "";background: #DFAFBF;position: absolute;top:0;bottom:0;left:0;width:125px;border-radius: 15px;}
+.toaster-legs::before,.toaster-legs::after{content: '';background: #000;width:69px;height:22px;border-radius: 0 0 15px 15px;position: absolute}
+.toaster-legs::before{left:34px;}
+.toaster-legs::after{right:34px;}
+
